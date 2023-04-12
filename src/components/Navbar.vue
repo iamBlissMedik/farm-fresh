@@ -1,14 +1,18 @@
-<script setup></script>
+<script setup>
+import { useFarmFreshStore } from "../stores/farmFresh";
+const store = useFarmFreshStore();
+const toggleHamburger = () => (store.hamburger = !store.hamburger);
+</script>
 <template>
   <div
-    class="w-full h-[90px] flex justify-center gap-2 items-center md:h-[122px]    md:grid md:grid-cols-3  md:px-[121px] bg-white"
+    class="w-full items-center py-3 px-[30px] justify-between flex bg-white sm:h-[122px] sticky top-1 z-10  lg:px-[121px] sm:px-[10px] "
   >
     <!-- brand -->
 
-    <div>
+    <div class="w-fit sm:w-[170px] md:w-[253px] ">
       <a
         href=""
-        class="flex items-center lg:justify-between text-farmFresh lg:text-4xl font-bold lg:w-[205px]"
+        class="flex  text-3xl items-center gap-2 text-farmFresh  font-bold sm:text-xl lg:text-4xl"
       >
         <span>
           <svg
@@ -24,27 +28,51 @@
             />
           </svg>
         </span>
-        Farm Fresh</a
+        <p>farm fresh</p></a
       >
     </div>
 
     <!-- NAV ITEMS -->
-    <div>
-      <div class="text-black text-xs justify-between font-normal flex md:text-2xl  md:w-[200px]  ">
-        <a href="" class="font-extrabold">Home</a>
-        <a href="">Locate Stores</a>
-        <a href="">Catalog</a>
-        <a href="">Contact</a>
+    <div
+      class="absolute top-12 left-0 pl-8 w-full items-center  bg-white py-5 sm:relative sm:top-0  sm:flex  " :class="store.hamburger ? 'hidden' : ''"
+    >
+      <div
+        class="text-black text-xl w-full font-normal justify-center gap-2  list-none   sm:flex  md:gap-8 sm:text-[18px] md:text-2xl "
+      >
+        <li class="mb-2">
+          <a href="" class="font-extrabold">Home</a>
+        </li>
+        <li class="mb-2">
+          <a href="">Locate Stores</a>
+        </li>
+        <li class="mb-2">
+          <a href="">Catalog</a>
+        </li>
+        <li class="mb-2">
+          <a href="">Contact</a>
+        </li>
+      </div>
+
+      <!-- login -->
+
+      <div class="w-fit sm:flex ">
+        <button
+          class="p-2 h-[44px] border-2 border-farmFresh rounded-[10px] text-farmFresh bg-white md:w-[187px] sm:w-[100px]  md:text-2xl "
+        >
+          Login
+        </button>
+
       </div>
     </div>
-    <!-- login -->
 
-    <div class="flex justify-end">
-      <button
-        class="md:w-[187px] p-2 rounded-lg md:h-[44px] border-2 border-farmFresh md:rounded-[10px] text-xs md:text-2xl text-farmFresh bg-white"
-      >
-        Login
-      </button>
+    <!-- hamburger -->
+    <div class="sm:hidden text-farmFresh cursor-pointer" @click="toggleHamburger">
+      <div v-if="store.hamburger" >
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <div v-else>
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
     </div>
   </div>
 </template>

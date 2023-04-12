@@ -6,6 +6,8 @@ export default {
       farmFresh: "#2B9348",
       white: "#FFFFFF",
       black: "#000000",
+      first: "#2B9438",
+      second: "#80B918",
     },
     screens: {
       sm: "576px",
