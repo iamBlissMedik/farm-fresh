@@ -5,7 +5,7 @@ const toggleHamburger = () => (store.hamburger = !store.hamburger);
 </script>
 <template>
   <div
-    class="w-full items-center py-3 px-[30px] justify-between flex bg-white sm:h-[122px] sticky top-1 z-10  lg:px-[121px] sm:px-[10px] "
+    class="w-full items-center py-3 px-[30px] justify-between flex bg-white sm:h-[122px] sticky top-0 z-10  lg:px-[121px] sm:px-[10px] "
   >
     <!-- brand -->
 
