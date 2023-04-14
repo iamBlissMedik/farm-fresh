@@ -5,11 +5,11 @@ const toggleHamburger = () => (store.hamburger = !store.hamburger);
 </script>
 <template>
   <div
-    class="w-full items-center py-3 px-[30px] justify-between flex bg-white sm:h-[122px] sticky top-0 z-10  lg:px-[121px] sm:px-[10px] "
+    class="w-full items-center py-3 px-[30px] justify-between flex bg-white sm:bg-transparent sm:h-[122px]  z-10  lg:px-[121px] sm:px-[10px] "
   >
     <!-- brand -->
 
-    <div class="w-fit sm:w-[170px] md:w-[253px] ">
+    <div class="w-fit sm:w-[168px] md:w-[253px] ">
       <a
         href=""
         class="flex  text-3xl items-center gap-2 text-farmFresh  font-bold sm:text-xl lg:text-4xl"
@@ -34,10 +34,10 @@ const toggleHamburger = () => (store.hamburger = !store.hamburger);
 
     <!-- NAV ITEMS -->
     <div
-      class="absolute top-12 left-0 pl-8 w-full items-center  bg-white py-5 sm:relative sm:top-0  sm:flex  " :class="store.hamburger ? 'hidden' : ''"
+      class="absolute top-12 left-0 pl-8 w-full items-center   py-5 sm:relative sm:top-0  sm:flex  " :class="store.hamburger ? 'hidden' : ''"
     >
       <div
-        class="text-black text-xl w-full font-normal justify-center gap-2  list-none   sm:flex  md:gap-8 sm:text-[18px] md:text-2xl "
+        class="text-black text-xl w-full font-normal justify-center gap-2  list-none   sm:flex  md:gap-8 sm:text-[18px] md:text-[24px] md:leading-[24px] "
       >
         <li class="mb-2">
           <a href="" class="font-extrabold">Home</a>
@@ -53,11 +53,12 @@ const toggleHamburger = () => (store.hamburger = !store.hamburger);
         </li>
       </div>
 
+
       <!-- login -->
 
       <div class="w-fit sm:flex ">
         <button
-          class="p-2 h-[44px] border-2 border-farmFresh rounded-[10px] text-farmFresh bg-white md:w-[187px] sm:w-[100px]  md:text-2xl "
+          class=" h-[44px] border-2 border-farmFresh rounded-[10px] text-farmFresh text-center bg-white md:w-[187px] sm:w-[100px]  md:text-2xl "
         >
           Login
         </button>

@@ -1,62 +1,61 @@
 <script setup></script>
 <template>
-  <div class="w-full">
-    <div class="flex justify-center">
+  <!-- wrapper -->
+  <div class="relative h-[778px] ">
+    <!-- left + right content -->
+    <div class=" sm:flex w-full h-full">
       <!-- left -->
-      <div class="w-fit md:pt-[140px]">
-        <div
-          class="text-[40px] lg:text-[80px] lg:w-[450px] leading-[80px] font-bold mb-5"
-        >
-          <h1>Fresh outta the <span class="text-farmFresh">Farm</span>!</h1>
-        </div>
-        <div class="text-2xl leading-[24px] font-light mb-5">
-          <p>
+      <div class="w-full lg:px-[121px] px-[30px]">
+        <!-- content -->
+        <div class="mt-[170px]">
+          <h1 class="text-[80px] w-[450px] leading-[80px] font-bold mb-5">
+            Fresh outta the <span class="text-farmFresh">Farm</span>!
+          </h1>
+          <p class="text-2xl leading-[24px] font-light mb-5">
             Get freshly-harvested fruits, vegetables and farm produce delivered
             to your doorstep.
           </p>
-        </div>
-        <!-- button -->
-        <div
-          class="bg-gradient-to-r from-first to-second w-[222px] h-[54px] flex items-center text-white text-2xl leading-[24px] rounded-xl"
-        >
-          <button class="w-full">
+          <button
+            class="bg-gradient-to-r from-first to-second px-[30px] py-[15px] text-white text-2xl leading-[24px] rounded-xl"
+          >
             Get Started <span class="ml-[19px]">></span>
           </button>
         </div>
       </div>
       <!-- right -->
-      <div class="w-full hidden md:block">
-        <div class="flex justify-end relative w-full">
-          <div class="">
-            <svg
-              width="550"
-              height="550"
-              viewBox="0 0 550 550"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                opacity="0.4"
-                width="550"
-                height="550"
-                rx="20"
-                fill="#80B918"
-              />
-            </svg>
+      <div class="w-full hidden sm:flex justify-end relative ">
+        <div class="lg:px-[121px] px-[30px]">
+          <!-- content -->
+          <div
+            class="relative w-[291.5px] h-[291.5px] sm:w-[583px] sm:h-[583px] mt-[37px] flex items-end justify-end"
+          >
+            <!-- right lgBg -->
+            <div class="sm:h-[550px] sm:w-[550px] h-[275px] w-[275px]">
+              <svg
 
-
-            <!-- image -->
-            <div class="absolute top-0">
-              <div class="relative bottom-[33px] right-[53px]">
-                <img src="../assets/tomat.jpg" alt="" />
-              </div>
+                viewBox="0 0 550 550"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  opacity="0.4"
+                  width="550"
+                  height="550"
+                  rx="20"
+                  fill="#80B918"
+                />
+              </svg>
+            </div>
+            <!-- landing image -->
+            <div class="absolute bottom-[33px] right-[33px]">
+              <img src="../assets/tomat.jpg" alt="" class="rounded-3xl" />
             </div>
           </div>
         </div>
-         <div class="absolute right-0 bottom-[-110px]">
-            <svg
-            width="231"
-            height="315"
+        <!-- catalog svg/icon -->
+        <div class="absolute bottom-0 sm:h-[315px] sm:w-[231px] h-[198px] w-[149px]">
+          <svg
+
             viewBox="0 0 231 315"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -68,9 +67,8 @@
               stroke-width="20"
             />
           </svg>
-    </div>
+        </div>
       </div>
     </div>
-
   </div>
 </template>
