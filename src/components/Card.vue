@@ -11,7 +11,7 @@ const props = defineProps([
 <template>
   <!-- card 1 -->
   <div
-    class="w-[300px] h-[300px] rounded-[20px] pt-5 pl-[27px]"
+    class=" w-[300px] h-[300px] rounded-[20px] pt-5 pl-[27px]"
     :class="backGround"
   >
     <!-- icon -->

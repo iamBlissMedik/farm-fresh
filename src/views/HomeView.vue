@@ -6,7 +6,7 @@ import Catalog from "../components/Catalog.vue";
 <template>
   <div>
     <!-- landing page -->
-    <div >
+    <div class="">
       <LandingPage />
       <Catalog/>
     </div>

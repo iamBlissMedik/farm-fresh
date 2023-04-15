@@ -7,7 +7,7 @@ const store = usecardCatalogStore();
   <!-- wrapper -->
   <div class="relative ">
     <!-- left + right content -->
-    <div class="lg:px-[121px] px-[30px] flex w-full">
+    <div class="lg:px-[121px] px-[30px] sm:flex w-full">
       <!-- left -->
       <div class="w-full pt-[244px]">
         <!-- text -->
@@ -24,7 +24,7 @@ const store = usecardCatalogStore();
       <div class="w-full flex pt-[120px]">
         <!-- cards wrapper -->
         <div class="w-full h-full flex justify-end">
-          <div class="grid grid-cols-2 gap-[44px]">
+          <div class="grid grid-cols-1 sm:grid sm:grid-cols-2 sm:gap-[44px]">
             <div v-for="(catalog, index) in store.catalogs" :key="index">
               <Card
                 :backGround="catalog.backGround"

@@ -7,12 +7,12 @@ import Navbar from "./components/Navbar.vue";
 </script>
 
 <template>
-  <div class=" w-screen">
+  <div class="w-full h-full ">
     <Navbar />
-    <div >
+
 
       <RouterView />
-    </div>
+
 
 
   </div>
