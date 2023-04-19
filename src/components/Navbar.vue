@@ -6,9 +6,12 @@ const updateScroll = () => (scrollPosition.value = window.scrollY);
 onMounted(() => window.addEventListener("scroll", updateScroll));
 </script>
 <template>
-  <div class="w-full h-[122px] flex items-center sticky top-0 z-10" :class="{change_color: scrollPosition > 50}">
+  <div
+    class="w-full h-[122px] flex items-center sticky top-0 z-10"
+    :class="{ change_color: scrollPosition > 50 }"
+  >
     <!-- nav items -->
-    <div class="w-full flex justify-between items-center ml-[133px] mr-[155px]">
+    <div class="w-full flex justify-between items-center ml-[133px] mr-[131px]">
       <!-- brand -->
       <div class="w-fit">
         <a
@@ -62,6 +65,7 @@ onMounted(() => window.addEventListener("scroll", updateScroll));
 </template>
 
 <style scoped>
-.change_color{
-    background-color: white;
-}</style>
+.change_color {
+  background-color: white;
+}
+</style>

@@ -21,15 +21,15 @@
       </div>
     </div>
     <!-- right -->
-    <div class="w-full hidden lg:flex lg:justify-end relative">
-      <div class="mr-[131px] mt-[37px]">
+    <div class="w-full flex justify-end relative">
+      <div class="mr-[131px] mt-[37px] w-fit h-fit">
         <!-- content -->
-        <div
-          class="relative w-[291.5px] h-[291.5px] sm:w-[583px] sm:h-[583px] flex items-end justify-end"
-        >
+        <div class="relative w-[583px] h-[583px] flex items-end justify-end">
           <!-- right lgBg -->
-          <div class="sm:h-[550px] sm:w-[550px] h-[275px] w-[275px]">
+          <div class="w-fit h-fit">
             <svg
+              width="550"
+              height="550"
               viewBox="0 0 550 550"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -44,16 +44,17 @@
             </svg>
           </div>
           <!-- landing image -->
-          <div class="absolute bottom-[33px] right-[33px]">
+          <div class="absolute left-0 top-0">
+            
             <img src="../assets/tomat.jpg" alt="" class="rounded-3xl" />
           </div>
         </div>
       </div>
       <!-- catalog svg/icon -->
-      <div
-        class="absolute bottom-0 right-0 sm:h-[315px] sm:w-[231px] h-[198px] w-[149px]"
-      >
+      <div class="absolute bottom-0 right-0 h-[315px] w-[231px]">
         <svg
+          width="231"
+          height="315"
           viewBox="0 0 231 315"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
