@@ -7,6 +7,7 @@ export default {
       white: "#FFFFFF",
       black: "#000000",
       first: "#2B9438",
+      grey: "#626262",
       second: "#80B918",
       transparent: "rgba(0, 0, 0, 0)",
     },
